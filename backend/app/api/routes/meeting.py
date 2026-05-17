@@ -101,3 +101,61 @@ async def generate_email(payload: dict):
             "success": False,
             "message": str(e)
         }
+
+
+# ==========================================
+# EXPORT MARKDOWN
+# ==========================================
+
+@router.post("/export-markdown")
+async def export_markdown(payload: dict):
+
+    try:
+
+        markdown = f"""# Meeting Summary
+
+{payload.get('summary', '')}
+
+# Action Items
+
+"""
+
+        for item in payload.get(
+            "action_items",
+            []
+        ):
+
+            markdown += f"""
+- Owner: {item.get('owner')}
+- Task: {item.get('task')}
+- Deadline: {item.get('deadline')}
+
+"""
+
+        markdown += "\n# Decisions\n"
+
+        for decision in payload.get(
+            "decisions",
+            []
+        ):
+
+            markdown += f"""
+- {decision}
+"""
+
+        return {
+            "success": True,
+            "markdown": markdown
+        }
+
+    except Exception as e:
+
+        print(
+            "MARKDOWN EXPORT ERROR:",
+            str(e)
+        )
+
+        return {
+            "success": False,
+            "message": str(e)
+        }
