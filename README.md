@@ -16,8 +16,6 @@ An AI-powered meeting assistant that analyzes meeting transcripts, extracts acti
 - Copy summary functionality
 - Copy email functionality
 - Markdown export
-- Modern dark blue UI
-- Responsive SaaS-style design
 
 ---
 
@@ -147,23 +145,3 @@ The application uses Gemini AI for:
 
 ---
 
-# Future Improvements
-
-- PDF export
-- Meeting sentiment analysis
-- Speaker analytics
-- Authentication
-- Database integration
-- Real-time meeting transcription
-
----
-
-# Screenshots
-
-Add your project screenshots here.
-
----
-
-# Author
-
-Vipsa Badiyani
