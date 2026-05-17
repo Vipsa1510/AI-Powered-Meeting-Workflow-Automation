@@ -133,3 +133,11 @@ http://localhost:5173
 
 ---
 
+# Use Cases
+
+- Team meeting analysis
+- Sprint retrospective summaries
+- Client discussion follow-ups
+- Project planning meetings
+- Internal standup documentation
+- Productivity workflow automation
