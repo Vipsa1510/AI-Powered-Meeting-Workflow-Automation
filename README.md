@@ -133,15 +133,3 @@ http://localhost:5173
 
 ---
 
-# AI Capabilities
-
-The application uses Gemini AI for:
-
-- Meeting summarization
-- Action item extraction
-- Deadline identification
-- Decision extraction
-- Professional email drafting
-
----
-
